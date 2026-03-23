@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Kamboj | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Mouse Glow Effect -->
+    <div id="mouse-glow"></div>
+    
+    <!-- Starry Background Canvas -->
+    <canvas id="starCanvas"></canvas>
+
+    <header>
+        <nav>
+            <div class="logo">HK<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <div class="profile-img-container">
+                    <!-- User's image will be placed here -->
+                    <img src="profile.png" alt="Harsh Kamboj" class="profile-img" onerror="this.src='https://via.placeholder.com/200?text=Harsh+Kamboj'">
+                </div>
+                <h1 class="glitch-text">Harsh Kamboj</h1>
+                <h2 id="typing-text"></h2>
+                
+                <div class="hero-buttons">
+                    <div class="toggle-container">
+                        <button id="resume-btn" class="glow-btn">Resume</button>
+                        <div id="resume-content" class="toggle-content hidden">
+                            <a href="file:///C:/Users/vashi/OneDrive/Desktop/harsh%20specilaized%20final%20cv.pdf" target="_blank" class="download-link">View Resume PDF</a>
+                        </div>
+                    </div>
+                    <div class="toggle-container">
+                        <button id="hire-btn" class="glow-btn">Hire Me</button>
+                        <div id="hire-content" class="toggle-content hidden">
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/harsh-kamboj25/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/harshkamboj1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="mailto:harshkamboj182@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="card glass">
+                <p>
+                    I am a passionate Full Stack Developer with a strong foundation in both frontend and backend technologies. 
+                    Currently pursuing my B.Tech in Computer Science and Engineering at Lovely Professional University, 
+                    I specialize in building scalable web applications and solving real-world problems through code. 
+                    My expertise spans across multiple languages like Python, C++, and Java, along with modern frameworks 
+                    like React.js and Node.js. I am dedicated to creating seamless user experiences and robust architectures. 
+                    With a keen eye for design and a love for complex problem-solving, I strive to deliver high-quality software solutions. 
+                    I am always eager to learn new technologies and contribute to innovative projects. 
+                    Let's build something amazing together!
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section reveal">
+            <h2 class="section-title">My Education</h2>
+            <div class="timeline">
+                <div class="timeline-item glass">
+                    <div class="timeline-date">Current</div>
+                    <h3>B.Tech in Computer Science and Engineering (Full Stack)</h3>
+                    <p>Lovely Professional University</p>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-date">12th Grade</div>
+                    <h3>Olympus High School (C.B.S.E.)</h3>
+                    <p>Science Stream</p>
+                </div>
+                <div class="timeline-item glass">
+                    <div class="timeline-date">10th Grade</div>
+                    <h3>Olympus High School (C.B.S.E.)</h3>
+                    <p>General Studies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section reveal">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid">
+                <div class="project-card glass">
+                    <div class="project-info">
+                        <h3>Telemedicine Healthcare</h3>
+                        <p>A rural healthcare access platform.</p>
+                        <div class="project-links">
+                            <a href="https://falguni02v.github.io/Telemedicine-Access-for-Rural-Healthcare---Nabha/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/falguni02v/Telemedicine-Access-for-Rural-Healthcare---Nabha" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-info">
+                        <h3>Pet Shelter Management</h3>
+                        <p>Management system for animal shelters.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/harshkamboj1/Pet-shelter-management-system" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass">
+                    <div class="project-info">
+                        <h3>Inventory Management</h3>
+                        <p>System for small store inventory tracking.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/harshkamboj1/Inventory-Mnagement-System-for-small-store" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section reveal">
+            <h2 class="section-title">Certificates</h2>
+            <div class="grid">
+                <div class="cert-card glass">
+                    <img src="https://drive.google.com/uc?export=download&id=12sc9wOYdb7q-diAO87ld_7Yy3_pCYZ2O" alt="AI and ML Certificate" class="cert-img">
+                    <p>AI and ML for real world problem solving - LPU</p>
+                </div>
+                <div class="cert-card glass">
+                    <img src="https://drive.google.com/uc?export=download&id=1VYpv3m8IHw5NcelNbwPye_tfFUSIlDAo" alt="Networking Certificate" class="cert-img">
+                    <p>The Bits and Bytes of Computer Networking - Coursera</p>
+                </div>
+                <div class="cert-card glass">
+                    <img src="https://drive.google.com/uc?export=download&id=1AIb5WTFYMqu9Jn6-dnXrKgQOx4YmaxV6" alt="Gen AI Certificate" class="cert-img">
+                    <p>Build Generative AI Apps - Coursera</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section reveal">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item">C#</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fab fa-react"></i> React.js</div>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-php"></i> PHP</div>
+                        <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3>Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Mongoose</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> MongoDB</div>
+                        <div class="skill-item">MySQL</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info glass">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-user"></i> Harsh Kamboj</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Phagwara, Jalandhar</p>
+                    <p><i class="fas fa-phone"></i> +91 7818868808</p>
+                    <p><i class="fas fa-envelope"></i> harshkamboj182@gmail.com</p>
+                </div>
+                <form id="contact-form" class="glass">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <input type="email" name="email" placeholder="Your Gmail" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="glow-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Harsh Kamboj. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
